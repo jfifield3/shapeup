@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+h1 {
+    font-size: 150%;
+}
+header img {
+    float: left;
+}
+header h2{
+    font-size: 250%;
+    text-indent: 30px;
+    font-style: italic;
+    color: steelblue;
+    text-shadow: 2.5px 2.5px rgb(44, 95, 136);
+}
+header h3 {
+    font-size: 150%;
+    text-indent: 30px;
+}
+section h2, section h3, aside h2 {
+    font-size: 150%
+}
+
+section a:link {
+    color: maroon;
+}
+
+section a:visited {
+    color: maroon;
+}
+
+aside ul {
+     line-height: 25px;
+}
+aside a:link {
+    color: steelblue;
+}
+aside a:visited {
+    color: steelblue;
+}
+aside a:hover{
+    color: maroon;
+}
+aside a:active {
+    color: maroon;
+}
+
+footer p{
+    font-size: 50%;
+    text-align-last: center;
+}
