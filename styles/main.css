@@ -86,8 +86,8 @@ font-weight: bold;
 
 }
 #nav_list ul li {
-    border: 2px solid black;
-    width: 90%;
+    width: 90%; 
+    padding: 2px;
 }
 #nav_list ul li a {
     display: block;
@@ -95,6 +95,7 @@ font-weight: bold;
     text-decoration: none;
     background-color: lightsteelblue;
     padding: 0.5em;
+    border: 2px solid black;
 }
 #nav_list ul li a:hover{
     background-color: steelblue;
