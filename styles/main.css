@@ -19,15 +19,15 @@ body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 100%;
-    max-width: 960px;
+    width: 95%;
+    max-width: 1024px;
     margin: 0 auto;
     border: 5px solid steelblue;
     box-shadow: 5px 5px 8px grey;
 }
 h1 {
     font-size: 150%;
-    margin-left: 15px;
+    margin-left: .5em;
 }
 
 /* Header Tags */
@@ -42,19 +42,53 @@ header h2{
     font-style: italic;
     color: steelblue;
     text-shadow: 2.5px 2.5px rgb(44, 95, 136);
-    margin-top: 15px;
+    margin-top: 1em;
 }
 header h3 {
     font-size: 150%;
     text-indent: 30px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 1em;
+    margin-bottom: 1.2em;
 }
 header img {
     float: left;
+    max-width: 140px;
+    width: 100%;
+    min-width: 70px;
 }
-/* Horizontal Menu Bar */
 
+/* Horizontal Menu Bar - Float and Block Style*/
+
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: steelblue;
+  }
+  
+  #nav_menu ul li {
+    float: left;
+  }
+  #nav_menu #about {
+      float: right;
+  }
+  
+  #nav_menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  #nav_menu ul li a:hover {
+    background-color: lightsteelblue;
+    color: black;
+  }
+
+/* Horizontal Nav Menu - 
 #nav_menu ul {
     list-style: none;
     text-align: center;
@@ -77,7 +111,7 @@ font-weight: bold;
 }
 #nav_menu ul li a:hover {
     color: red;
-}
+} */
 
 /* Vertical Navigation List */
 
@@ -106,15 +140,15 @@ main {
 }
 section h2, section h3, aside h2 {
     font-size: 150%;
-    margin: 15px;
+    margin-left:  .5em;
    
 }
 section p {
-    margin: 15px;
+    margin: 1em;
 }
 section blockquote {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 3em;
+    margin-right: 3em;
     font-size: 90%;
     color: navy;
     border-left: 3px solid maroon;
@@ -131,7 +165,7 @@ section a:visited {
 }
 
 aside ul {
-     line-height: 25px;
+     margin-left: 2em;
 }
 aside a:link {
     color: steelblue;
@@ -150,10 +184,15 @@ aside li {
 }
 .sidebar {
     width: 33%;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 .sidebar h2 {
     color: maroon;
+    font-size: 180%;
+}
+.sidebar li {
+    margin-top: 5px;
+    margin-left: .5em;
 }
 .homesection {
     width: 65%;
@@ -162,13 +201,40 @@ aside li {
 }
 footer{
     background-color: steelblue;
+    margin-top: 10px;
     clear: both;
 }
 footer p{
-    font-size: 50%;
+    font-size: 75%;
     text-align-last: center;
     color: white;
-    padding: 25px;
+    padding: 2em;
     font-weight: bold;
     font-variant: small-caps;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .homesection {
+        float: none;
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    #nav_menu {
+        display: none;
+    }
+    #mobilemenu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: steelblue !important;
+    }
+}
+@media only screen and (max-width: 400px) {
+
 }
